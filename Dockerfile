@@ -1,5 +1,6 @@
-FROM n8nio/n8n
+FROM docker.n8n.io/n8nio/n8n
 
 USER root
-RUN apk update && apk add ffmpeg
+RUN apk --update add ffmpeg
+
 USER node
